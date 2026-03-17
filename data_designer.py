@@ -23,7 +23,4 @@ DataFrame['Is_Bank_Holiday'] = (DataFrame['Holiday_Name'] != "None").astype(int)
 
 DataFrame = DataFrame.drop(columns=['Date_Temporary', 'Date'])
 
-print(f"Dataset generated with {len(DataFrame)} hourly rows.")
-print(DataFrame.head(10))
-
 DataFrame.to_csv("UK_Holiday_Data_2010_2020.csv", index=False)
