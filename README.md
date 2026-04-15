@@ -1,4 +1,5 @@
 ->Holiday Data & Temporal Feature Engineering
+
 The holiday dataset was processed to move beyond simple date markers into a format capable of capturing human behavioral patterns. The day_of_week feature was explicitly preserved alongside the is_bank_holiday indicator.
 
 The rationale is grounded in Social Rhythm Theory: incident rates for both fires and accidents do not occur in isolation but are tied to weekly cycles. For example, a Bank Holiday on a Friday creates a different risk profile (travel surges, prolonged social activity) compared to a midweek holiday. By retaining the day of the week, the model can distinguish between standard "Weekend Effects" and unique "Holiday Effects," capturing the complex temporal interactions required for accurate risk prediction.
